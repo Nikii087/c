@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1612932451 source:c:\users\pcp\onedrive\desktop\c languege\gettersandsetters.c\main.c
+	<stdio.h>
+	<stdlib.h>
+	"string.h"
+
