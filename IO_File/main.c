@@ -54,10 +54,12 @@ void writeOnFile(){
 }
 
 void readOnFile() {
-    char ch;
-    printf("\n\nread from file");
-    while((ch = fgetc(fptr)) != EOF)
-      printf("%c", ch);
+ // Read contents from file
+ printf("\n\tlsdkjfkjsdhflkj");
+ char line[150];
+ while( ReadLine(line, 150, fptr) ) {
+      printf( "%s\n", line );
+  }
 }
 
 int main()
