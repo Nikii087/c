@@ -47,15 +47,17 @@ void writeOnFile(){
         exit(1);
     }
     for(int i = 0; i < size ; i++){
-        fprintf(fptr,"\n\t Name : \t%s", name[i]);
-        fprintf(fptr,"\n\t City : \t%s", city[i]);
-        fprintf(fptr,"\n\t Age  : \t%d", age[i]);
-        fprintf(fptr,"\n\t ----- *** -----");
+        fprintf(fptr,"Name : \t%s", name[i]);
+        fprintf(fptr,"City : \t%s", city[i]);
+        fprintf(fptr,"Age  : \t%d", age[i]);
     }
 }
 
 void readOnFile() {
-
+    char ch;
+    printf("\n\nread from file");
+    while((ch = fgetc(fptr)) != EOF)
+      printf("%c", ch);
 }
 
 int main()
