@@ -1,4 +1,19 @@
 #include<stdio.h>
+
+//reverse function
+int sum=0,rem;
+rev_function(int num){
+
+    if(num){
+      rem=num%10;
+      sum=sum*10+rem;
+      rev_function(num/10);
+   }
+   else
+      return sum;
+
+}
+
 int main(){
    int num,rev;
 
@@ -10,15 +25,4 @@ int main(){
    rev=rev_function(num);
    printf("\nAfter reverse the no is :%d",rev);
    return 0;
-}
-int sum=0,rem;
-rev_function(int num){
-   if(num){
-      rem=num%10;
-      sum=sum*10+rem;
-      rev_function(num/10);
-   }
-   else
-      return sum;
-
 }
